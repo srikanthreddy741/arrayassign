@@ -1,0 +1,14 @@
+#!/bin/bash -x
+
+present=1
+randomcheck=$((RANDOM%2))
+
+if [ $present -eq $randomcheck ]
+then
+      empRatePerHr=5000
+      empHrs=8
+      salary=$(($empHrs*$empRatePerHr))
+else
+      salary=0
+fi
+ 
